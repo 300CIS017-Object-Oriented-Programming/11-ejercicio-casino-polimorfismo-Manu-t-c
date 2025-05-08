@@ -37,6 +37,7 @@ void View::jugarView() {
         cout << "1. Mayor a 13." << endl;
         cout << "2. Dos colores." << endl;
         cout << "3. Slots" << endl;
+        cout << "4. Cara o Sello" << endl;
         cout << "Opcion: ";
         cin >> idJuego;
         std::string textoResultado;

@@ -1,6 +1,16 @@
 #include "Slots.h"
 
+void Slots::mostrarReglas() {
+    cout << "------------------------------------------Reglas Slots------------------------------------------" << endl;
+    cout << "1) La maquina genera 3 numeros aleatorios entre 1 y 7." << endl;
+    cout << "2) Si los tres numeros son iguales, ganas el doble de lo apostado." << endl;
+    cout << "3) Si los tres forman una escalera (ascendente o descendente), ganas la mitad de lo apostado." << endl;
+    cout << "4) Si los tres son 7, ganas 7 veces lo apostado." << endl;
+    cout << "5) Si no se cumple ninguna de las anteriores, pierdes lo apostado." << endl;
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+}
 float Slots::jugar(float gonzosApostar) {
+    mostrarReglas();
     float gonzosResultado;
     srand(time(nullptr));
     int numMaxRandom = 7;
@@ -32,3 +42,5 @@ float Slots::calcularResultado(float gonzosApostar) {
         return 0;
     }
 }
+
+

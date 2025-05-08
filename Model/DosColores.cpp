@@ -4,7 +4,21 @@
 
 #include "DosColores.h"
 
+void DosColores::mostrarReglas() {
+    cout << "--------------------------Reglas Dos Colores-------------------------" << endl;
+    cout << "1) El jugador elige un color: Blanco o Negro." << endl;
+    cout << "2) El jugador lanza un dado (de 6 caras)." << endl;
+    cout << "3) El casino tambien lanza un dado y elige un color al azar." << endl;
+    cout << "4) Resultado del juego:" << endl;
+    cout << "   - Si el numero y el color coinciden: gana 4x lo apostado." << endl;
+    cout << "   - Si solo el numero coincide: gana 0.5 por lo apostado." << endl;
+    cout << "   - Si solo el color coincide: no gana ni pierde." << endl;
+    cout << "   - Si no coincide nada: pierde todo lo apostado." << endl;
+    cout << "----------------------------------------------------------------------" << endl;
+}
+
 float DosColores::jugar(float gonzosApostar) {
+    mostrarReglas();
     float gonzosResultado;
     srand(time(nullptr));
     int numMaxRandom = 7;
@@ -52,6 +66,8 @@ float DosColores::calcularResultado(float gonzosApostar) {
         return lowestResult;
     }
 }
+
+
 /* Como el constructor se definio por defecto no hay que poner constructo vacio
 DosColores::~DosColores() {
 

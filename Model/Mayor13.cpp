@@ -4,7 +4,19 @@
 
 #include "Mayor13.h"
 
+void Mayor13::mostrarReglas() {
+    cout << "---------------------------------------Reglas Mayor 13--------------------------------------" << endl;
+    cout << "1) El sistema genera un numero aleatorio entre 1 y 13 para ti." << endl;
+    cout << "2) Tienes dos opciones:" << endl;
+    cout << "   a) Rendirte: antes de que salga el numero del casino, pierdes la mitad de lo apostado." << endl;
+    cout << "   b) Jugar: se genera el numero aleatorio del casino (1 al 13) y continua la ronda." << endl;
+    cout << "3) Si tu numero es mayor que el numero del casino, ganas el doble de lo apostado." << endl;
+    cout << "4) Si tu numero es menor o igual al numero del casino, pierdes todo lo apostado." << endl;
+    cout << "---------------------------------------------------------------------------------------------" << endl;
+}
+
 float Mayor13::jugar(float gonzosApostar) {
+    mostrarReglas();
     int opcion;
     float gonzosResultado;
     float lowestResult = 0.5;
@@ -44,3 +56,5 @@ float Mayor13::calcularResultado(float gonzosApostar) {
         return lowestResult;
     }
 }
+
+
