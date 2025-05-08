@@ -17,11 +17,11 @@ protected:
 public:
     Juego() = default;
 
-    virtual ~Juego() = default;
-
     virtual float jugar(float gonzosApostar) = 0;
 
+    virtual void mostrarReglas() = 0; // Es declarado el metodo de mostrar reglas en juego para que este pueda ser utilizado en los juegos futuros y en los actuales
 
+    virtual ~Juego() = default;
 };
 
 #endif //CASINO_JUEGO_H

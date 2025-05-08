@@ -1,0 +1,4 @@
+## Pregunta 1.
+En el código se da a entender que la clase juego es abstracta porque ambos metodos están definidos con = 0, por lo que son metodos puros, por lo que no va a crear un objeto directamente, por lo que tampoco tiene un archivo se inicialicen estos metodos. 
+## Pregunta 2.
+Con el uso de la clase abstracta deja la plantilla para que los juegos que se vayan a realizar usen los metodos que ya están en juego dado que los obliga a utilizarlos, además ahorra tiempo porque si se desea hacer una clase hija se podrá heredar la clase juego solo se agregaría y no se tendrá que cambiar el sistema, por último ayuda a reutilizar código.
